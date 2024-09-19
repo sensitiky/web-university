@@ -15,8 +15,8 @@ This is the official website of IESA Educativo, built with Next.js to provide a 
 
 Before starting, ensure that you have Node.js and npm installed on your system. Then, clone the repository and install the dependencies:
 
-    git clone https://github.com/yourusername/iesaeducativo.git
-    cd iesaeducativo
+    git clone https://github.com/sensitiky/IESA-WEB
+    cd IESA-WEB
     npm install
 
 ## Development
