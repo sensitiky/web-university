@@ -81,7 +81,7 @@ const Teccosmetica = () => {
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
                   Se deberá presentar: Una carpeta colgante. Título de Nivel
-                  Secundario, original y fotocopia legalizados. Tres fotos color
+                  Secundario, original y fotocopia legalizados. Dos fotos color
                   4 x 4. Fotocopia del DNI.
                 </p>
               </div>
