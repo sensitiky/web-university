@@ -8,237 +8,231 @@ interface Cursos {
 const cursos: Cursos[] = [
   // Tecnología e Informática
   {
-    nombre: "Autocad",
+    nombre: 'Autocad',
     descripcion:
-      "Domina el diseño asistido por computadora para crear planos y modelos 2D y 3D con precisión.",
-    modalidad: "Presencial.",
-    imagen: "/autocad.webp",
+      'Domina el diseño asistido por computadora para crear planos y modelos 2D y 3D con precisión.',
+    modalidad: 'Presencial.',
+    imagen: '/autocad.webp',
   },
   {
-    nombre: "Introducción a la programación",
+    nombre: 'Desarrollo Móvil',
     descripcion:
-      "Análisis y diseño de algoritmos. Estructuras de control. Estructuras estáticas. Funciones y procedimientos.",
-    modalidad: "Presencial.",
-    imagen: "/c++.webp",
+      'Aprende a crear aplicaciones móviles funcionales y atractivas para Android e iOS desde cero.',
+    modalidad: 'Presencial.',
+    imagen: '/aplicaciones.webp',
   },
   {
-    nombre: "Java",
+    nombre: 'Game developer para jóvenes y niños',
     descripcion:
-      "Sumérgete en el mundo del desarrollo de software con nuestro curso de Java, diseñado para proporcionar una comprensión profunda de la programación orientada a objetos, aplicaciones prácticas en el desarrollo de software y habilidades esenciales para construir aplicaciones robustas y escalables.",
-    modalidad: "Presencial.",
-    imagen: "/java.webp",
+      'Aprende a crear juegos interactivos y divertidos usando herramientas accesibles para jóvenes y niños.',
+    modalidad: 'Presencial.',
+    imagen: '/videojuegos.webp',
   },
   {
-    nombre: "Master Office",
+    nombre: 'Introducción a la programación',
     descripcion:
-      "Este curso está orientado a destacarte en tu trabajo manejando como experto Microsoft Office, el software clave para potenciar tus tareas.",
-    modalidad: "Presencial.",
-    imagen: "/master office.webp",
+      'Análisis y diseño de algoritmos. Estructuras de control. Estructuras estáticas. Funciones y procedimientos.',
+    modalidad: 'Presencial.',
+    imagen: '/c++.webp',
   },
   {
-    nombre: "PHP",
+    nombre: 'Java',
     descripcion:
-      "Introducción, entornos virtuales. Capa de modelo, vistas, plantillas. PostgreSQL: creación de base de datos. HTML, CSS, JavaScript, Python.",
-    modalidad: "Presencial.",
-    imagen: "/php.webp",
+      'Sumérgete en el mundo del desarrollo de software, diseñado para proporcionar la programación orientada a objetos.',
+    modalidad: 'Presencial.',
+    imagen: '/java.webp',
   },
   {
-    nombre: "Project Manager",
+    nombre: 'Master Office',
     descripcion:
-      "Gestiona proyectos eficientemente, coordinando equipos, plazos y recursos para alcanzar objetivos definidos.",
-    modalidad: "Presencial.",
-    imagen: "/project.webp",
+      'Este curso está orientado a destacarte en tu trabajo manejando como experto Microsoft Office, el software clave para potenciar tus tareas.',
+    modalidad: 'Presencial.',
+    imagen: '/master office.webp',
   },
   {
-    nombre: "Python",
+    nombre: 'PHP',
     descripcion:
-      "Aprende a programar en Python, desde conceptos básicos hasta aplicaciones avanzadas en diversos proyectos.",
-    modalidad: "Presencial.",
-    imagen: "/python.webp",
+      'Introducción, entornos virtuales. Capa de modelo, vistas, plantillas. PostgreSQL: creación de base de datos. HTML, CSS, JavaScript, Python.',
+    modalidad: 'Presencial.',
+    imagen: '/php.webp',
   },
   {
-    nombre: "Tecnologías de la información y la comunicación",
+    nombre: 'Project Manager',
     descripcion:
-      "Introducción, entornos virtuales. Capa de modelo, vistas, plantillas.",
-    modalidad: "Presencial.",
-    imagen: "/tecnologias.webp",
+      'Gestiona proyectos eficientemente, coordinando equipos, plazos y recursos para alcanzar objetivos definidos.',
+    modalidad: 'Presencial.',
+    imagen: '/project.webp',
+  },
+  {
+    nombre: 'Python',
+    descripcion:
+      'Aprende a programar en Python, desde conceptos básicos hasta aplicaciones avanzadas en diversos proyectos.',
+    modalidad: 'Presencial.',
+    imagen: '/python.webp',
+  },
+  {
+    nombre: 'Tecnologías de la información y la comunicación',
+    descripcion:
+      'Introducción, entornos virtuales. Capa de modelo, vistas, plantillas.',
+    modalidad: 'Presencial.',
+    imagen: '/tecnologias.webp',
   },
 
   // Diseño y Multimedia
   {
-    nombre: "Diseño gráfico digital",
-    descripcion: "CorelDRAW, Photoshop, SketchUp.",
-    modalidad: "Presencial.",
-    imagen: "/diseño grafico.webp",
+    nombre: 'Diseño gráfico digital',
+    descripcion:
+      'Orientado al uso especializado de software aplicado al diseño digital.',
+    modalidad: 'Presencial.',
+    imagen: '/diseño grafico.webp',
   },
   {
-    nombre: "Fotografía avanzada",
+    nombre: 'Fotografía avanzada',
     descripcion:
-      "Elementos de la Fotografía, Composición, Manejo de las cámaras, Edición, Salidas fotográficas.",
-    modalidad: "Presencial.",
-    imagen: "/fotografia2.webp",
+      'Orientado a elementos de la fotografía, composición, manejo de las cámaras y edición. Requisito: Conocimientos en fotografía básica',
+    modalidad: 'Presencial.',
+    imagen: '/fotografia2.webp',
   },
   {
-    nombre: "Fotografía básica",
+    nombre: 'Fotografía básica',
     descripcion:
-      "Elementos de la Fotografía, Composición, Manejo de las cámaras, Edición, Salidas fotográficas.",
-    modalidad: "Presencial.",
-    imagen: "/fotografia1.webp",
+      'Orientado a elementos de la fotografía, composición, manejo de las cámaras y edición sin conocimientos previos.',
+    modalidad: 'Presencial.',
+    imagen: '/fotografia1.webp',
   },
   {
-    nombre: "Game developer para jóvenes y niños",
+    nombre: 'Streaming y grabación de video',
     descripcion:
-      "Aprende a crear juegos interactivos y divertidos usando herramientas accesibles para jóvenes y niños.",
-    modalidad: "Presencial.",
-    imagen: "/videojuegos.webp",
-  },
-  {
-    nombre: "Streaming y grabación de video",
-    descripcion:
-      "Aprende a transmitir y grabar videos de alta calidad con técnicas y herramientas profesionales.",
-    modalidad: "Presencial.",
-    imagen: "/streaming.webp",
+      'Aprende a transmitir y grabar videos de alta calidad con técnicas y herramientas profesionales.',
+    modalidad: 'Presencial.',
+    imagen: '/streaming.webp',
   },
 
   // Marketing y Negocios
   {
-    nombre: "Marketing digital y comercio electrónico",
+    nombre: 'Marketing digital y comercio electrónico',
     descripcion:
-      "Prepárate para iniciar una nueva carrera en marketing digital y comercio electrónico, y adquiere las habilidades necesarias para atraer y fidelizar a los clientes. Aprende cómo los consumidores interactúan con las marcas y cómo los especialistas utilizan las plataformas y herramientas online para comprar y vender productos y servicios.",
-    modalidad: "Presencial.",
-    imagen: "/marketing2.webp",
+      'Incursiona en el marketing digital y comercio electrónico adquiriendo habilidades para atraer y fidelizar clientes. Aprende sobre la interacción entre consumidores y marcas, y el uso de plataformas y herramientas online.',
+    modalidad: 'Presencial.',
+    imagen: '/marketing2.webp',
   },
   {
-    nombre: "Marketing y dirección comercial",
+    nombre: 'Marketing y dirección comercial',
     descripcion:
-      "Desarrollar con precisión una estrategia comercial, implica tener en cuenta múltiples variables. A través de este curso, podrás abordar cada una de ellas con visión estratégica, desde las políticas de comunicación hasta los canales de distribución, pasando por innovación, precio, administración de la fuerza de ventas y satisfacción del cliente.",
-    modalidad: "Presencial.",
-    imagen: "/marketing1.webp",
+      'Desarrollar estrategias comerciales, políticas de comunicación y canales de incursión.',
+    modalidad: 'Presencial.',
+    imagen: '/marketing1.webp',
   },
   {
-    nombre: "Tango Gestión",
+    nombre: 'Tango Gestión',
     descripcion:
-      "Domina el software Tango Gestión para la administración integral de empresas y negocios.",
-    modalidad: "Presencial.",
-    imagen: "/tango.webp",
+      'Domina el software Tango Gestión para la administración integral de empresas y negocios.',
+    modalidad: 'Presencial.',
+    imagen: '/tango.webp',
   },
 
   // Idiomas
   {
-    nombre: "Inglés",
+    nombre: 'Inglés',
     descripcion:
-      "Aprende inglés desde nivel básico hasta avanzado, mejorando tus habilidades de conversación, lectura y escritura.",
-    modalidad: "Presencial.",
-    imagen: "/ingles.webp",
+      'Aprende inglés desde nivel básico hasta avanzado, mejorando tus habilidades de conversación, lectura y escritura.',
+    modalidad: 'Presencial.',
+    imagen: '/ingles.webp',
   },
   {
-    nombre: "Portugués",
+    nombre: 'Portugués',
     descripcion:
-      "Aprende portugués desde nivel básico hasta avanzado, desarrollando habilidades de conversación, lectura y escritura.",
-    modalidad: "Presencial.",
-    imagen: "/portugues.webp",
+      'Aprende portugués desde nivel básico hasta avanzado, desarrollando habilidades de conversación, lectura y escritura.',
+    modalidad: 'Presencial.',
+    imagen: '/portugues.webp',
   },
 
   // Belleza y Estética
   {
-    nombre: "Aparatología",
+    nombre: 'Aparatología',
     descripcion:
-      "Domina el uso de equipos estéticos avanzados para tratamientos de belleza y cuidado personal.",
-    modalidad: "Presencial.",
-    imagen: "/aparatologia.webp",
+      'Domina el uso de equipos estéticos avanzados para tratamientos de belleza y cuidado personal.',
+    modalidad: 'Presencial.',
+    imagen: '/aparatologia.webp',
   },
   {
-    nombre: "Barbería y corte masculino",
+    nombre: 'Barbería y corte masculino',
     descripcion:
-      "Degradados y tipos, Estilos y tendencias. Visagismo. Diseños y freestyle.",
-    modalidad: "Presencial.",
-    imagen: "/barberia.webp",
+      'Incursionaras en el mundo de la barbería, con manejo de estilo, tendencias, diseños, visajismo y freestyle.',
+    modalidad: 'Presencial.',
+    imagen: '/barberia.webp',
   },
   {
-    nombre: "Belleza de Manos y pies",
+    nombre: 'Belleza de Manos y pies',
     descripcion:
-      "Domina técnicas especializadas en belleza manos y pies con nuestro curso, enfocado en brindar habilidades prácticas y conocimientos fundamentales para el cuidado profesional de manos, uñas y pies.",
-    modalidad: "Presencial.",
-    imagen: "/manosypies copia 2.webp",
+      'Domina técnicas especializadas en belleza manos y pies sanos.',
+    modalidad: 'Presencial.',
+    imagen: '/manosypies copia 2.webp',
   },
   {
-    nombre: "Colorimetría",
+    nombre: 'Colorimetría',
     descripcion:
-      "Aprende a aplicar y combinar colores de forma profesional en diseño, moda y belleza.",
-    modalidad: "Presencial.",
-    imagen: "/colorimetria.webp",
+      'Aprende a aplicar y combinar colores de forma profesional en el cabello, mejorando técnicas de tintura y decoloración.',
+    modalidad: 'Presencial.',
+    imagen: '/colorimetria.webp',
   },
   {
-    nombre: "Depilación",
+    nombre: 'Depilación',
     descripcion:
-      "Aprende técnicas profesionales de depilación para distintos tipos de piel y métodos, garantizando resultados seguros y eficaces.",
-    modalidad: "Presencial.",
-    imagen: "/depilacion.webp",
+      'Aprende técnicas de depilación para distintos tipos de piel y métodos, garantizando resultados seguros y eficaces.',
+    modalidad: 'Presencial.',
+    imagen: '/depilacion.webp',
   },
   {
-    nombre: "Drenaje linfático",
+    nombre: 'Drenaje linfático',
     descripcion:
-      "El curso de drenaje linfático ofrece formación especializada en técnicas manuales para estimular el sistema linfático, mejorando la circulación y reduciendo la retención de líquidos. Incluye teoría sobre la anatomía y fisiología del sistema linfático, así como prácticas supervisadas.",
-    modalidad: "Presencial.",
-    imagen: "/drenaje.webp",
+      'El drenaje linfático ofrece técnicas manuales para estimular el sistema linfático, mejorando la circulación y reduciendo la retención de líquidos. Incluye teoría sobre la anatomía y fisiología del sistema linfático, así como prácticas supervisadas.',
+    modalidad: 'Presencial.',
+    imagen: '/drenaje.webp',
   },
   {
-    nombre: "Maquillaje",
+    nombre: 'Maquillaje',
     descripcion:
-      "Maquillaje social, Maquillaje de fotografía y video, Maquillaje de moda, Maquillaje artístico.",
-    modalidad: "Presencial.",
-    imagen: "/maquillaje.webp",
+      'Aborda conceptos teóricos y prácticos para desempeñarte como un profesional en este arte. Secretos, tips y tendencias.',
+    modalidad: 'Presencial.',
+    imagen: '/maquillaje.webp',
   },
   {
-    nombre: "Masaje Deportivo",
+    nombre: 'Masaje Deportivo',
     descripcion:
-      "Aprende técnicas especializadas en masaje deportivo para mejorar el rendimiento, acelerar la recuperación y prevenir lesiones en deportistas.",
-    modalidad: "Presencial",
-    imagen: "/masaje deportivo.webp",
+      'Aprende técnicas especializadas en masaje deportivo para mejorar el rendimiento, acelerar la recuperación y prevenir lesiones en deportistas.',
+    modalidad: 'Presencial',
+    imagen: '/masaje deportivo.webp',
   },
   {
-    nombre: "Reflexología",
+    nombre: 'Reflexología',
     descripcion:
-      "En este curso de reflexología aprenderás a tratar diferentes patologías y afecciones médicas de manera efectiva, utilizando los puntos reflejos en los pies.",
-    modalidad: "Presencial.",
-    imagen: "/reflexologia.webp",
+      'Aprenderás a tratar diferentes patologías y afecciones médicas de manera efectiva, utilizando los puntos reflejos en los pies y manos.',
+    modalidad: 'Presencial.',
+    imagen: '/reflexologia.webp',
   },
   {
-    nombre: "Técnicas de spa",
+    nombre: 'Técnicas de spa',
     descripcion:
-      "Aromaterapia, Fitoterapia, Cromoterapia, Musicoterapia. Cómo, cuándo y cuáles aplicar. Tratamientos en gabinete. Cuándo derivar.",
-    modalidad: "Presencial.",
-    imagen: "/spa.webp",
+      'Aprenderás Aromaterapia, Fitoterapia, Cromoterapia, Musicoterapia. Cómo, cuándo y cuáles aplicar. Tratamientos en gabinete y cuándo derivar.',
+    modalidad: 'Presencial.',
+    imagen: '/spa.webp',
   },
 
-  // Otros
+  // Gestiones administrativas y comerciales
   {
-    nombre: "Asistente Notarial",
+    nombre: 'Asistente Notarial',
     descripcion:
-      "Este curso está orientado a brindar a los alumnos los elementos necesarios para desenvolverse con eficiencia e idoneidad en las funciones prácticas de una Escribanía, como asistente de Abogados o Escribanos.",
-    modalidad: "Presencial.",
-    imagen: "/notarial.webp",
+      'Orientado a brindar los elementos necesarios para desenvolverse con eficiencia e idoneidad en las funciones prácticas como asistente de Abogados o Escribanos.',
+    modalidad: 'Presencial.',
+    imagen: '/notarial.webp',
   },
   {
-    nombre: "Desarrollo Móvil",
+    nombre: 'Liquidación de Ganancias y Bienes Personales',
     descripcion:
-      "Aprende a crear aplicaciones móviles funcionales y atractivas para Android e iOS desde cero.",
-    modalidad: "Presencial.",
-    imagen: "/aplicaciones.webp",
-  },
-  {
-    nombre: "Gestoría",
-    descripcion:
-      "Capacítate en la gestión de trámites administrativos y legales para empresas y particulares.",
-    modalidad: "Presencial.",
-    imagen: "/gestoria.webp",
-  },
-  {
-    nombre: "Liquidación de Ganancias y Bienes Personales",
-    descripcion:
-      "Aprende a calcular y gestionar impuestos sobre ganancias y bienes personales de manera precisa y eficiente.",
-    modalidad: "Presencial.",
-    imagen: "/ganancias.webp",
+      'Aprende a calcular y gestionar impuestos sobre ganancias y bienes personales de manera precisa y eficiente.',
+    modalidad: 'Presencial.',
+    imagen: '/ganancias.webp',
   },
 ];
 

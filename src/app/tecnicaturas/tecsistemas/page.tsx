@@ -1,13 +1,13 @@
-"use client";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { useState } from "react";
-import Footer from "@/app/componentes/footer";
-import Header from "@/app/componentes/header";
+'use client';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { useState } from 'react';
+import Footer from '@/app/componentes/footer';
+import Header from '@/app/componentes/header';
 
 const Tecsistemas = () => {
-  const [email, setEmail] = useState("");
-  const programa = "Tecnicatura Superior en Análisis de Sistemas.";
+  const [email, setEmail] = useState('');
+  const programa = 'Tecnicatura Superior en Análisis de Sistemas.';
 
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(event.target.value);
@@ -17,23 +17,23 @@ const Tecsistemas = () => {
     event.preventDefault();
 
     try {
-      const response = await fetch("/api/requestinfo", {
-        method: "POST",
+      const response = await fetch('/api/requestinfo', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify({ email, programa }),
       });
 
       if (response.ok) {
-        alert("Correo enviado correctamente");
-        setEmail("");
+        alert('Correo enviado correctamente');
+        setEmail('');
       } else {
-        alert("Hubo un error al enviar el correo");
+        alert('Hubo un error al enviar el correo');
       }
     } catch (error) {
-      console.error("Error al enviar el correo:", error);
-      alert("Hubo un error al enviar el correo");
+      console.error('Error al enviar el correo:', error);
+      alert('Hubo un error al enviar el correo');
     }
   };
 
@@ -59,7 +59,7 @@ const Tecsistemas = () => {
                   Duración: 3 años
                 </p>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Título: Técnico Superior en Analista de Sistemas.
+                  Título: Técnico Superior en Análisis de Sistemas.
                 </p>
               </div>
               <div className="grid gap-2">
@@ -80,9 +80,9 @@ const Tecsistemas = () => {
                   Requisitos de Ingreso
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Se deberá presentar una carpeta colgante. Título de Nivel
-                  Secundario, original y fotocopia. Tres fotos color 4 x 4.
-                  Fotocopia del DNI.
+                  Se deberá presentar: Una carpeta colgante. Título de Nivel
+                  Secundario, original y fotocopia legalizados. Tres fotos color
+                  4 x 4. Fotocopia del DNI.
                 </p>
               </div>
               <div className="grid gap-2">
@@ -114,7 +114,7 @@ const Tecsistemas = () => {
                 type="submit"
                 className="relative group bg-[#722F37] hover:bg-[#722F37]/80 rounded-full"
               >
-                Solicitar Información{" "}
+                Solicitar Información{' '}
               </Button>
             </form>
             <p className="text-xs text-gray-500 dark:text-gray-400 text-center">

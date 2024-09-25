@@ -1,13 +1,13 @@
-"use client";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { useState } from "react";
-import Footer from "@/app/componentes/footer";
-import Header from "@/app/componentes/header";
+'use client';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { useState } from 'react';
+import Footer from '@/app/componentes/footer';
+import Header from '@/app/componentes/header';
 
 const Tecgrafico = () => {
-  const [email, setEmail] = useState("");
-  const programa = "Tecnicatura Superior en Diseño gráfico digital.";
+  const [email, setEmail] = useState('');
+  const programa = 'Tecnicatura Superior en Diseño gráfico digital.';
 
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(event.target.value);
@@ -17,23 +17,23 @@ const Tecgrafico = () => {
     event.preventDefault();
 
     try {
-      const response = await fetch("/api/requestinfo", {
-        method: "POST",
+      const response = await fetch('/api/requestinfo', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify({ email, programa }),
       });
 
       if (response.ok) {
-        alert("Correo enviado correctamente");
-        setEmail("");
+        alert('Correo enviado correctamente');
+        setEmail('');
       } else {
-        alert("Hubo un error al enviar el correo");
+        alert('Hubo un error al enviar el correo');
       }
     } catch (error) {
-      console.error("Error al enviar el correo:", error);
-      alert("Hubo un error al enviar el correo");
+      console.error('Error al enviar el correo:', error);
+      alert('Hubo un error al enviar el correo');
     }
   };
 
@@ -44,7 +44,7 @@ const Tecgrafico = () => {
         <div className="container grid gap-8 px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <img
-              src="/tecgrafico.jfif"
+              src="/tec grafico.jpeg"
               width={600}
               height={400}
               alt="Carrera universitaria"
@@ -80,8 +80,8 @@ const Tecgrafico = () => {
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
                   Se deberá presentar: Una carpeta colgante. Título de Nivel
-                  Secundario, original y fotocopia. Tres fotos color 4 x 4.
-                  Fotocopia del DNI.
+                  Secundario, original y fotocopia legalizados. Tres fotos color
+                  4 x 4. Fotocopia del DNI.
                 </p>
               </div>
               <div className="grid gap-2">
@@ -113,7 +113,7 @@ const Tecgrafico = () => {
                 type="submit"
                 className="relative group bg-[#722F37] hover:bg-[#722F37]/80 rounded-full"
               >
-                Solicitar Información{" "}
+                Solicitar Información{' '}
               </Button>
             </form>
             <p className="text-xs text-gray-500 dark:text-gray-400 text-center">

@@ -1,9 +1,9 @@
-"use client";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { useState } from "react";
-import Footer from "@/app/componentes/footer";
-import Header from "@/app/componentes/header";
+'use client';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { useState } from 'react';
+import Footer from '@/app/componentes/footer';
+import Header from '@/app/componentes/header';
 
 const Tecjuridica = () => {
   const [email, setEmail] = useState('');
@@ -20,9 +20,9 @@ const Tecjuridica = () => {
       const response = await fetch('/api/requestinfo', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email, programa })
+        body: JSON.stringify({ email, programa }),
       });
 
       if (response.ok) {
@@ -43,7 +43,7 @@ const Tecjuridica = () => {
         <div className="container grid gap-8 px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <img
-              src="/tecjuridica.jfif"
+              src="/tecjuridico.webp"
               width={600}
               height={400}
               alt="Carrera universitaria"
@@ -66,8 +66,7 @@ const Tecjuridica = () => {
                   Perfil Profesional
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Podra
-                  asumir roles como:
+                  Podra asumir roles como:
                   <br /> Asesor, investigador, o mediador de conflictos de orden
                   jurídico. En el caso de nuestra institución se eligió un
                   perfil generalista, con el fin de abarcar todos los escenarios
@@ -80,9 +79,9 @@ const Tecjuridica = () => {
                   Requisitos de Ingreso
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Se deberá presentar: Una carpeta
-                  colgante. Título de Nivel Secundario, original y fotocopia.
-                  Tres fotos color 4 x 4. Fotocopia del DNI.
+                  Se deberá presentar: Una carpeta colgante. Título de Nivel
+                  Secundario, original y fotocopia legalizados. Tres fotos color
+                  4 x 4. Fotocopia del DNI.
                 </p>
               </div>
               <div className="grid gap-2">
@@ -90,8 +89,8 @@ const Tecjuridica = () => {
                   Áreas de Trabajo
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Están preparados para desempeñarse en diversas
-                  áreas del sector legal, incluyendo:
+                  Están preparados para desempeñarse en diversas áreas del
+                  sector legal, incluyendo:
                   <br />
                   Asesoría Legal, Gestión de Documentación, Administración
                   Judicial, Contratación y Negociación, Cumplimiento Normativo,
@@ -100,7 +99,7 @@ const Tecjuridica = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="mx-auto w-full max-w-sm space-y-2">
             <form className="flex space-x-2" onSubmit={handleSubmit}>
               <Input
@@ -111,20 +110,23 @@ const Tecjuridica = () => {
                 onChange={handleEmailChange}
                 required
               />
-              <Button type="submit" className="relative group bg-[#722F37] hover:bg-[#722F37]/80 rounded-full">
-                Solicitar Información{" "}
+              <Button
+                type="submit"
+                className="relative group bg-[#722F37] hover:bg-[#722F37]/80 rounded-full"
+              >
+                Solicitar Información{' '}
               </Button>
             </form>
             <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
-              Envía tu información para recibir más detalles sobre la carrera de Técnico Superior en Gestión Jurídica Generalista.
+              Envía tu información para recibir más detalles sobre la carrera de
+              Técnico Superior en Gestión Jurídica Generalista.
             </p>
           </div>
-
         </div>
       </section>
       <Footer />
     </div>
   );
-}
+};
 
 export default Tecjuridica;
