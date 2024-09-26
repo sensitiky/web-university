@@ -18,7 +18,7 @@ const categorias = {
     nombre: 'Diseño y Multimedia',
   },
   gestiones: {
-    nombre: 'Gestiones administrativas y comerciales',
+    nombre: 'Gestiones administrativas, comerciales y ambientales',
   },
   idiomas: { nombre: 'Idiomas' },
   marketing: {
@@ -78,7 +78,7 @@ export default function Cursos() {
               'Reflexología',
               'Técnicas de spa',
             ].includes(curso.nombre);
-          case 'Gestiones administrativas y comerciales':
+          case 'Gestiones administrativas, comerciales y ambientales':
             return [
               'Asistente Notarial',
               'Gestoría',
