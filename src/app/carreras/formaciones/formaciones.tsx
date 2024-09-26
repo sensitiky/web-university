@@ -62,6 +62,15 @@ const formaciones: Formacion[] = [
     imagen: '/gestoria.webp',
   },
   {
+    nombre: 'Gestión y control ambiental',
+    descripcion:
+      'Formación orientada a la seguridad del medio ambiente, identificación de riesgos ambientales.',
+    modalidad: 'Presencial',
+    duracion: '10 meses',
+    resolucion: 'E/T',
+    imagen: '/gestion ambiental.webp',
+  },
+  {
     nombre: 'Instalación y reparación de sistemas electrónicos y de seguridad',
     descripcion:
       'Formación avanzada en montaje y reparación de cámaras de seguridad y alarmas.',

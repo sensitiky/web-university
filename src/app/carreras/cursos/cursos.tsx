@@ -43,25 +43,11 @@ const cursos: Cursos[] = [
     imagen: '/java.webp',
   },
   {
-    nombre: 'Master Office',
-    descripcion:
-      'Este curso está orientado a destacarte en tu trabajo manejando como experto Microsoft Office, el software clave para potenciar tus tareas.',
-    modalidad: 'Presencial.',
-    imagen: '/master office.webp',
-  },
-  {
     nombre: 'PHP',
     descripcion:
       'Introducción, entornos virtuales. Capa de modelo, vistas, plantillas. PostgreSQL: creación de base de datos. HTML, CSS, JavaScript, Python.',
     modalidad: 'Presencial.',
     imagen: '/php.webp',
-  },
-  {
-    nombre: 'Project Manager',
-    descripcion:
-      'Gestiona proyectos eficientemente, coordinando equipos, plazos y recursos para alcanzar objetivos definidos.',
-    modalidad: 'Presencial.',
-    imagen: '/project.webp',
   },
   {
     nombre: 'Python',
@@ -76,6 +62,20 @@ const cursos: Cursos[] = [
       'Introducción, entornos virtuales. Capa de modelo, vistas, plantillas.',
     modalidad: 'Presencial.',
     imagen: '/tecnologias.webp',
+  },
+  {
+    nombre: 'Project Manager',
+    descripcion:
+      'Gestiona proyectos eficientemente, coordinando equipos, plazos y recursos para alcanzar objetivos definidos.',
+    modalidad: 'Presencial.',
+    imagen: '/project.webp',
+  },
+  {
+    nombre: 'Master Office',
+    descripcion:
+      'Este curso está orientado a destacarte en tu trabajo manejando como experto Microsoft Office, el software clave para potenciar tus tareas.',
+    modalidad: 'Presencial.',
+    imagen: '/master office.webp',
   },
 
   // Diseño y Multimedia
@@ -233,6 +233,13 @@ const cursos: Cursos[] = [
       'Aprende a calcular y gestionar impuestos sobre ganancias y bienes personales de manera precisa y eficiente.',
     modalidad: 'Presencial.',
     imagen: '/ganancias.webp',
+  },
+  {
+    nombre: 'Liquidación de sueldos',
+    descripcion:
+      'Aprende a calcular y gestionar los sueldos y salarios de los empleados, incluyendo deducciones, impuestos y beneficios.',
+    modalidad: 'Presencial',
+    imagen: '/liq sueldos.webp',
   },
 ];
 

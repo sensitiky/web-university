@@ -83,6 +83,8 @@ export default function Cursos() {
               'Asistente Notarial',
               'Gestoría',
               'Liquidación de Ganancias y Bienes Personales',
+              ,
+              'Liquidación de sueldos',
             ].includes(curso.nombre);
           default:
             return false;
