@@ -20,62 +20,48 @@ import {
 
 export default function Landing() {
   return (
-    <div className="flex flex-col min-h-screen bg-white text-gray-900">
+    <div className="flex flex-col min-h-screen text-gray-900">
       <CookieNotice />
       <Header />
-      <main className="flex-1">
-        {/*Seccion Bienvenida*/}
-        <section className="h-[80vh] text-gray-900">
-          <div className="w-auto h-full">
-            <Image
-              src="/IESA.webp"
-              alt="IESA"
-              layout="fill"
-              objectFit="cover"
-              objectPosition="center 35%"
-              quality={100}
-            />
-            <div className="relative container justify-center flex h-full w-full">
-              <div className="flex flex-col items-center text-center rounded-lg  p-3 h-full w-full justify-center">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-white drop-shadow-[0_2.3px_2.3px_rgba(0,0,0,0.8)]">
-                  Bienvenidos a IESA <br /> el instituto de <br />
-                  tu futura profesión.
-                </h1>
-                <p className="text-lg md:text-xl lg:text-2xl mb-8 text-white drop-shadow-[0_2.3px_2.3px_rgba(0,0,0,0.8)]">
-                  Explora nuestros programas e inscríbete a una vibrante
-                  comunidad de estudiantes.
-                </p>
-                <div className="flex gap-4">
-                  <Button className="bg-[#722F37] hover:bg-[#722F37]/80 rounded-full shadow-md">
-                    <Link
-                      href="/contacto"
-                      className="relative group"
-                      prefetch={false}
-                    >
-                      Contáctanos
-                      <span className="absolute bottom-[-2px] left-0 w-full h-[2px] bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
-                    </Link>
-                  </Button>
-                  <Button
-                    className="text-black border border-black rounded-full shadow-md"
-                    variant="outline"
-                  >
-                    <Link
-                      href="/instituto"
-                      className="relative group"
-                      prefetch={false}
-                    >
-                      Descubre más
-                      <span className="absolute bottom-[-2px] left-0 w-full h-[2px] bg-black scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
-                    </Link>
-                  </Button>
-                </div>
-              </div>
+      <main>
+        {/* Sección Bienvenida */}
+        <section className="relative h-[45rem] w-full overflow-hidden">
+          {/* Video de Fondo */}
+          <video
+            src="/videos/IESA-Banner.mp4"
+            className="absolute inset-0 w-full h-full object-cover"
+            autoPlay
+            loop
+            muted
+          />
+
+          {/* Overlay para mejor visibilidad del texto */}
+          <div className="absolute inset-0 bg-black bg-opacity-50" />
+
+          {/* Contenedor de Contenido */}
+          <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
+            {/* Reproductor de Video Principal */}
+            <div className="w-full max-w-5xl aspect-video bg-black rounded-lg overflow-hidden shadow-2xl">
+              <video
+                src="/videos/iesaBanner.mp4"
+                className="w-full h-full object-fit"
+                autoPlay
+                loop
+                muted
+              />
             </div>
+
+            {/* Botón de CTA */}
+            <Button
+              className="mt-8 px-8 py-4 text-lg font-semibold bg-[#722F37] hover:bg-[#722F37]/90 transition-colors duration-200 hover:border hover:border-white rounded-full"
+              asChild
+            >
+              <Link href="/carreras/tecnicaturas">Conoce más</Link>
+            </Button>
           </div>
         </section>
 
-        {/*Seccion Oferta academica*/}
+        {/* Sección Oferta Académica */}
         <section
           id="programs"
           className="bg-gray-50 py-12 md:py-20 lg:py-28 z-50 relative"
@@ -166,7 +152,8 @@ export default function Landing() {
             </div>
           </div>
         </section>
-        {/*Seccion sobre el instituto*/}
+
+        {/* Sección sobre el Instituto */}
         <section id="about" className="py-12 md:py-20 lg:py-28">
           <div className="container mx-auto px-4 md:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -202,7 +189,8 @@ export default function Landing() {
             </div>
           </div>
         </section>
-        {/*Seccion contacto*/}
+
+        {/* Sección Contacto */}
         <section id="contacto" className="py-12 md:py-20 lg:py-28 bg-gray-50">
           <div className="container px-4 md:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-8 items-center">
