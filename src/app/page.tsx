@@ -25,10 +25,10 @@ export default function Landing() {
       <Header />
       <main>
         {/* Sección Bienvenida */}
-        <section className="relative h-[45rem] w-full overflow-hidden">
+        <section className="relative h-[30rem] md:h-[45rem] w-full overflow-hidden">
           {/* Video de Fondo */}
           <video
-            src="/videos/IESA-Banner.mp4"
+            src="/videos/Banner.mp4"
             className="absolute inset-0 w-full h-full object-cover"
             autoPlay
             loop
