@@ -106,3 +106,24 @@
 .animate-fadeInSwing {
   animation: fadeInSwing 1s ease-in-out;
 }
+
+@media (min-width: 1600px) {
+  #welcome {
+    height: 48rem;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1600px) {
+  #banner-video {
+    max-width: 33.6rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1390px) {
+  #banner-video {
+    max-width: 33.9rem;
+  }
+  #logo-image {
+    height: 5rem;
+    width: 15rem;
+    margin-bottom: 1px;
+  }
+}

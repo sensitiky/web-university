@@ -3,12 +3,15 @@ import Image from 'next/image';
 import { FC, JSX, SVGProps, useState, useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetTrigger, SheetContent } from '@/components/ui/sheet';
+import { MenuIcon } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 
 const Header: FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isSheetDropdownOpen, setIsSheetDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const sheetDropdownRef = useRef<HTMLDivElement>(null);
+  const router = usePathname();
   let timeout: NodeJS.Timeout;
 
   const handleMouseEnter = () => {
@@ -73,13 +76,15 @@ const Header: FC = () => {
     <header className="bg-white text-customColor-iesa py-6 px-6 md:px-12 flex items-center justify-between shadow-lg z-40">
       <Link href="/" className="flex items-center gap-2" prefetch={false}>
         <div className="p-2 rounded-lg">
-          <Image
-            src="/logofinal.png"
-            alt="Logo IESA"
-            className="rounded-lg"
-            width={100}
-            height={100}
-          />
+          {router !== '/' && (
+            <Image
+              src="/logofinal.png"
+              alt="Logo IESA"
+              className="rounded-lg"
+              width={100}
+              height={100}
+            />
+          )}
         </div>
       </Link>
       <nav className="hidden md:flex items-center gap-6 text-lg">
@@ -183,24 +188,3 @@ const DropdownLink: FC<{ href: string; label: string }> = ({ href, label }) => (
 );
 
 export default Header;
-
-function MenuIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <line x1="4" y1="6" x2="20" y2="6" />
-      <line x1="4" y1="12" x2="20" y2="12" />
-      <line x1="4" y1="18" x2="20" y2="18" />
-    </svg>
-  );
-}

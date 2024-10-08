@@ -7,7 +7,6 @@ import {
   CardContent,
   CardFooter,
 } from '@/components/ui/card';
-import CookieNotice from './componentes/cookies';
 import Footer from './componentes/footer';
 import Header from './componentes/header';
 import Image from 'next/image';
@@ -21,11 +20,13 @@ import {
 export default function Landing() {
   return (
     <div className="flex flex-col min-h-screen text-gray-900">
-      <CookieNotice />
       <Header />
       <main>
         {/* Sección Bienvenida */}
-        <section className="relative h-[30rem] md:h-[45rem] w-full overflow-hidden">
+        <section
+          className="relative h-[30rem] md:h-[35rem] w-full overflow-hidden"
+          id="welcome"
+        >
           {/* Video de Fondo */}
           <video
             src="/videos/Banner.mp4"
@@ -40,8 +41,20 @@ export default function Landing() {
 
           {/* Contenedor de Contenido */}
           <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
+            <Image
+              src="/logofinal.png"
+              width={500}
+              height={500}
+              alt="IESA-Logo"
+              className="drop-shadow-[0_1.3px_1.3px_rgba(255,255,255,0.8)]"
+              id="logo-image"
+            />
+
             {/* Reproductor de Video Principal */}
-            <div className="w-full max-w-5xl aspect-video bg-black rounded-lg overflow-hidden shadow-2xl">
+            <div
+              className="w-full max-w-3xl aspect-video bg-black rounded-lg overflow-hidden shadow-2xl"
+              id="banner-video"
+            >
               <video
                 src="/videos/iesaBanner.mp4"
                 className="w-full h-full object-fit"
