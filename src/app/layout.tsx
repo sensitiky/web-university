@@ -9,8 +9,8 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Inicio | IESA',
-  description: 'Developer: Mario Correa',
+  title: 'IESA',
+  description: 'Bienvenido al IESA, el Instituto de Estudios Superiores Argentino. Aquí encontrarás información detallada sobre nuestros programas académicos, tecnicatures, y actividades que ofrecemos. Nuestro objetivo es formar profesionales altamente capacitados y comprometidos con la sociedad. Explora nuestras propuestas educativas, conoce a nuestro cuerpo docente, y descubre cómo podemos ayudarte a alcanzar tus metas profesionales.',
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <head></head>
       <body className={inter.className}>
         {children}
