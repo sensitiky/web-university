@@ -1,10 +1,10 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { FC, JSX, SVGProps, useState, useEffect, useRef } from 'react';
-import { Button } from '@/components/ui/button';
-import { Sheet, SheetTrigger, SheetContent } from '@/components/ui/sheet';
-import { MenuIcon } from 'lucide-react';
-import { usePathname } from 'next/navigation';
+import Link from "next/link";
+import Image from "next/image";
+import { FC, JSX, SVGProps, useState, useEffect, useRef } from "react";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
+import { MenuIcon } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 const Header: FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -38,34 +38,34 @@ const Header: FC = () => {
 
   useEffect(() => {
     if (dropdownRef.current) {
-      dropdownRef.current.addEventListener('mouseenter', handleMouseEnter);
-      dropdownRef.current.addEventListener('mouseleave', handleMouseLeave);
+      dropdownRef.current.addEventListener("mouseenter", handleMouseEnter);
+      dropdownRef.current.addEventListener("mouseleave", handleMouseLeave);
     }
 
     if (sheetDropdownRef.current) {
       sheetDropdownRef.current.addEventListener(
-        'mouseenter',
+        "mouseenter",
         handleSheetMouseEnter
       );
       sheetDropdownRef.current.addEventListener(
-        'mouseleave',
+        "mouseleave",
         handleSheetMouseLeave
       );
     }
 
     return () => {
       if (dropdownRef.current) {
-        dropdownRef.current.removeEventListener('mouseenter', handleMouseEnter);
-        dropdownRef.current.removeEventListener('mouseleave', handleMouseLeave);
+        dropdownRef.current.removeEventListener("mouseenter", handleMouseEnter);
+        dropdownRef.current.removeEventListener("mouseleave", handleMouseLeave);
       }
 
       if (sheetDropdownRef.current) {
         sheetDropdownRef.current.removeEventListener(
-          'mouseenter',
+          "mouseenter",
           handleSheetMouseEnter
         );
         sheetDropdownRef.current.removeEventListener(
-          'mouseleave',
+          "mouseleave",
           handleSheetMouseLeave
         );
       }
@@ -76,19 +76,18 @@ const Header: FC = () => {
     <header className="bg-white text-customColor-iesa py-6 px-6 md:px-12 flex items-center justify-between shadow-lg z-40">
       <Link href="/" className="flex items-center gap-2" prefetch={false}>
         <div className="p-2 rounded-lg">
-          {router !== '/' && (
-            <Image
-              src="/logofinal.png"
-              alt="Logo IESA"
-              className="rounded-lg"
-              width={100}
-              height={100}
-            />
-          )}
+          <Image
+            src="/logofinal.png"
+            alt="Logo IESA"
+            className="rounded-lg"
+            width={100}
+            height={100}
+          />
         </div>
       </Link>
       <nav className="hidden md:flex items-center gap-6 text-lg">
-        <NavLink href="/" label="Inicio" />
+        <NavLink href="/" label="Inicio" />{" "}
+        <NavLink href="/media" label="Conócenos" />
         <NavLink href="/instituto" label="Institucional" />
         <div
           className="relative group"

@@ -41,7 +41,7 @@ export default function Instituto() {
   }
 
   return (
-    <div className="flex flex-col min-h-[100dvh] bg-gray-50 dark:bg-gray-900">
+    <div className="flex flex-col min-h-[100dvh] bg-gray-100 dark:bg-gray-900">
       <Header />
       <main className="flex-1 grid md:grid-cols-[1fr_700px] gap-8 px-4 lg:px-2 py-12 md:py-16">
         <Carousel />

@@ -1,21 +1,21 @@
-'use client';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
+"use client";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardHeader,
   CardContent,
   CardFooter,
-} from '@/components/ui/card';
-import Footer from './componentes/footer';
-import Header from './componentes/header';
-import Image from 'next/image';
+} from "@/components/ui/card";
+import Footer from "./componentes/footer";
+import Header from "./componentes/header";
+import Image from "next/image";
 import {
   ArrowRightIcon,
   BeakerIcon,
   BookIcon,
   MicroscopeIcon,
-} from 'lucide-react';
+} from "lucide-react";
 
 export default function Landing() {
   return (
@@ -77,7 +77,7 @@ export default function Landing() {
         {/* Sección Oferta Académica */}
         <section
           id="programs"
-          className="bg-gray-50 py-12 md:py-20 lg:py-28 z-50 relative"
+          className="bg-gray-100 py-12 md:py-20 lg:py-28 z-50 relative"
         >
           <div className="container px-4 md:px-6 lg:px-8">
             <div className="text-center mb-8 md:mb-12 lg:mb-16">
@@ -204,7 +204,7 @@ export default function Landing() {
         </section>
 
         {/* Sección Contacto */}
-        <section id="contacto" className="py-12 md:py-20 lg:py-28 bg-gray-50">
+        <section id="contacto" className="py-12 md:py-20 lg:py-28 bg-gray-100">
           <div className="container px-4 md:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="flex-col justify-center align-middle items-center">
