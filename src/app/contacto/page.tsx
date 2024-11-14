@@ -13,15 +13,9 @@ import {
   SelectItem,
 } from "@/components/ui/select";
 import { useState, useCallback, useMemo } from "react";
-import dynamic from "next/dynamic";
 import Image from "next/image";
-
-const Footer = dynamic(() => import("@/app/componentes/footer"), {
-  ssr: false,
-});
-const Header = dynamic(() => import("@/app/componentes/header"), {
-  ssr: false,
-});
+import Header from "../componentes/header";
+import Footer from "@/app/componentes/footer";
 
 const options = [
   {
@@ -100,7 +94,7 @@ interface Option {
   subOptions?: Option[];
 }
 
-const ContactForm: React.FC = () => {
+export default function ContactForm() {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [selectedOption, setSelectedOption] = useState<Option | null>(null);
@@ -350,9 +344,7 @@ const ContactForm: React.FC = () => {
       <Footer />
     </div>
   );
-};
-
-export default ContactForm;
+}
 
 function FacebookIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
