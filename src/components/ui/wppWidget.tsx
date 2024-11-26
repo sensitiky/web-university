@@ -22,7 +22,7 @@ const WhatsAppWidget: React.FC<WhatsAppWidgetProps> = ({
   return (
     <button
       onClick={handleRedirect}
-      className="fixed bottom-5 right-5 bg-[#25D366] text-white border-none rounded-full w-12 h-12 lg:w-20 lg:h-20 cursor-pointer shadow-lg flex items-center justify-center z-50 animate-fadeInSwing"
+      className="fixed bottom-5 right-5 text-white border-none rounded-full w-12 h-12 lg:w-20 lg:h-20 cursor-pointer flex items-center justify-center z-50 animate-fadeInSwing"
       aria-label="Contact via WhatsApp"
     >
       <Image
