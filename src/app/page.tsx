@@ -23,11 +23,11 @@ export default function Landing() {
       <Header />
       <main>
         {/* Sección Bienvenida */}
-        <section className="relative h-screen " id="welcome">
+        <section className="relative h-screen overflow-hidden" id="welcome">
           {/* Video de Fondo con efecto de paralaje */}
           <video
             src="/videos/Banner.mp4"
-            className="absolute inset-0 w-full h-full object-cover transform scale-110 motion-safe:animate-in"
+            className="absolute inset-0 w-full h-full object-fill scale-105 overflow-hidden motion-safe:animate-in"
             autoPlay
             loop
             muted
@@ -46,7 +46,7 @@ export default function Landing() {
               className="drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)]"
               id="logo-image"
             />
-            <h1 className="z-50 flex relative text-3xl animate-slideIn">
+            <h1 className="z-50 flex relative text-3xl text-center animate-slideIn">
               Descubrí tu pasión por estudiar
             </h1>
             {/* Botón de CTA con efecto hover */}

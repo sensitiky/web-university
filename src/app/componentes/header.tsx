@@ -74,18 +74,24 @@ const Header: FC = () => {
   const headerBgColor = router === '/' ? 'bg-[#573d43]' : 'bg-gray-100';
   const outlineColor = router === '/' ? 'bg-gray-100' : 'bg-gray-900';
   const headerTextColor = router === '/' ? 'text-gray-100' : 'text-gray-900';
-  const NavLink: FC<{ href: string; label: string }> = ({ href, label }) => (
-    <Link
-      href={href}
-      className="relative group transition-colors z-10"
-      prefetch={false}
-    >
-      {label}
-      <span
-        className={`absolute bottom-[-2px] left-0 w-full h-[2px] ${outlineColor} scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out`}
-      ></span>
-    </Link>
-  );
+  const NavLink: FC<{ href: string; label: string }> = ({ href, label }) => {
+    const router = usePathname();
+    const isActive = router === href;
+    return (
+      <Link
+        href={href}
+        className="relative group transition-colors z-10"
+        prefetch={false}
+      >
+        {label}
+        <span
+          className={`absolute bottom-[-2px] left-0 w-full h-[2px] ${outlineColor} ${
+            isActive ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
+          } transition-transform duration-300 ease-in-out`}
+        ></span>
+      </Link>
+    );
+  };
   const DropdownLink: FC<{ href: string; label: string }> = ({
     href,
     label,
@@ -160,7 +166,11 @@ const Header: FC = () => {
       </Button>
       <Sheet>
         <SheetTrigger asChild>
-          <Button variant="outline" size="icon" className="md:hidden z-10">
+          <Button
+            variant="outline"
+            size="icon"
+            className="md:hidden z-10 text-gray-100 bg-transparent border-none"
+          >
             <MenuIcon className="h-6 w-6" />
             <span className="sr-only">Toggle navigation menu</span>
           </Button>
